@@ -1,0 +1,6 @@
+framework module MLogging {
+  umbrella header "MLogging-umbrella.h"
+
+  export *
+  module * { export * }
+}

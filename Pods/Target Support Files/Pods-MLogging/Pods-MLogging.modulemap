@@ -1,0 +1,6 @@
+framework module Pods_MLogging {
+  umbrella header "Pods-MLogging-umbrella.h"
+
+  export *
+  module * { export * }
+}

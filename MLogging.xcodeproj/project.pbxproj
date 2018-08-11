@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254D5962B09D14B631E93240 /* Pods_MLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B149AA214955F4056EC61EFB /* Pods_MLogging.framework */; };
 		AD11A689211F364F00F6BE74 /* MLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD11A67F211F364F00F6BE74 /* MLogging.framework */; };
 		AD11A68E211F364F00F6BE74 /* MLoggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11A68D211F364F00F6BE74 /* MLoggingTests.swift */; };
 		AD11A690211F364F00F6BE74 /* MLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = AD11A682211F364F00F6BE74 /* MLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD11A69A211F36BD00F6BE74 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11A699211F36BD00F6BE74 /* Logging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,10 @@
 		AD11A688211F364F00F6BE74 /* MLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD11A68D211F364F00F6BE74 /* MLoggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLoggingTests.swift; sourceTree = "<group>"; };
 		AD11A68F211F364F00F6BE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD11A699211F36BD00F6BE74 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		B149AA214955F4056EC61EFB /* Pods_MLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD28C957909B025D658AA62 /* Pods-MLogging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLogging.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLogging/Pods-MLogging.release.xcconfig"; sourceTree = "<group>"; };
+		DEE8DF6722D2FD789558ED69 /* Pods-MLogging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLogging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLogging/Pods-MLogging.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254D5962B09D14B631E93240 /* Pods_MLogging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +57,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		262E980666E7F1B4C46DCDF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B149AA214955F4056EC61EFB /* Pods_MLogging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42F3B680E42D9AD7485C1EA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEE8DF6722D2FD789558ED69 /* Pods-MLogging.debug.xcconfig */,
+				CBD28C957909B025D658AA62 /* Pods-MLogging.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AD11A675211F364E00F6BE74 = {
 			isa = PBXGroup;
 			children = (
 				AD11A681211F364F00F6BE74 /* MLogging */,
 				AD11A68C211F364F00F6BE74 /* MLoggingTests */,
 				AD11A680211F364F00F6BE74 /* Products */,
+				42F3B680E42D9AD7485C1EA8 /* Pods */,
+				262E980666E7F1B4C46DCDF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +99,7 @@
 			children = (
 				AD11A682211F364F00F6BE74 /* MLogging.h */,
 				AD11A683211F364F00F6BE74 /* Info.plist */,
+				AD11A699211F36BD00F6BE74 /* Logging.swift */,
 			);
 			path = MLogging;
 			sourceTree = "<group>";
@@ -104,10 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD11A693211F364F00F6BE74 /* Build configuration list for PBXNativeTarget "MLogging" */;
 			buildPhases = (
+				537C3AE86ED8C85DE7A634C3 /* [CP] Check Pods Manifest.lock */,
 				AD11A67A211F364F00F6BE74 /* Sources */,
 				AD11A67B211F364F00F6BE74 /* Frameworks */,
 				AD11A67C211F364F00F6BE74 /* Headers */,
 				AD11A67D211F364F00F6BE74 /* Resources */,
+				8D93AFC54A6ABD0918C348F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +177,7 @@
 				TargetAttributes = {
 					AD11A67E211F364F00F6BE74 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					AD11A687211F364F00F6BE74 = {
@@ -191,11 +221,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		537C3AE86ED8C85DE7A634C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLogging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D93AFC54A6ABD0918C348F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLogging/Pods-MLogging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD11A67A211F364F00F6BE74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD11A69A211F36BD00F6BE74 /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +400,9 @@
 		};
 		AD11A694211F364F00F6BE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE8DF6722D2FD789558ED69 /* Pods-MLogging.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MadhuKalp.MLogging;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,7 +424,9 @@
 		};
 		AD11A695211F364F00F6BE74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD28C957909B025D658AA62 /* Pods-MLogging.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +448,7 @@
 		AD11A697211F364F00F6BE74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJ66UASLWF;
 				INFOPLIST_FILE = MLoggingTests/Info.plist;
@@ -390,6 +463,7 @@
 		AD11A698211F364F00F6BE74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJ66UASLWF;
 				INFOPLIST_FILE = MLoggingTests/Info.plist;

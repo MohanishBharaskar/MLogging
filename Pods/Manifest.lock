@@ -1,0 +1,16 @@
+PODS:
+  - MLogging (1.0.0)
+
+DEPENDENCIES:
+  - MLogging (from `/Users/mohanish/Documents/IOS Projects/Practice Examples/MLogging`)
+
+EXTERNAL SOURCES:
+  MLogging:
+    :path: /Users/mohanish/Documents/IOS Projects/Practice Examples/MLogging
+
+SPEC CHECKSUMS:
+  MLogging: 11139005afb40a4d11da53153fd8cb2b2e6279ea
+
+PODFILE CHECKSUM: 1ee4f36dd8552fbe36237372176d7f478e70c754
+
+COCOAPODS: 1.3.1
